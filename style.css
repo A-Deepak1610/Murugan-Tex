@@ -1,0 +1,484 @@
+@page {
+    size: A4;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+*{
+    margin: 0;
+    font-family: "Roboto";
+}
+.murugan{
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    margin-right: 580px;
+    width: 80px;
+    height:80px ;
+}
+.mainbody{
+    margin-top: 13px;
+    border:2px solid  black;
+    width:700px;
+    height: 1060px;
+}
+.taxinvoice{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+}
+.tax{
+    margin-left: 43%;
+}
+.original{
+    font-size: 13px;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+.heading{
+   text-align: center;
+    font-size: 35px;
+    font-family:"Roboto";
+    font-weight: 400;
+    /* color: green; */
+}
+.address{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family:"Roboto";
+    font-weight: 500;
+}
+.details{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.gstn{
+    font-weight: 700;
+}
+.state,.phone,.email{
+    font-weight: 400;
+}
+.phone{
+    margin-left: 60px;
+}
+.invoice{
+    display: flex;
+    width: 100%;
+}
+.invoicenoo{
+    width: 50%;
+    border: 1px solid black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+}
+.inputno{
+    width: 20px;
+    font-weight: 800;
+    border: none;
+    font-size: 17px;
+}
+.invoicedate{
+    width: 50%;
+    border: 1px solid black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+}
+.inputdate{
+    width: 100px;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+}
+.billandship{
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    height: 240px;
+}
+.billto{
+    width: 49.79%;
+    border: 1px solid black;
+}
+.shipto{
+    width: 50%;
+    border: 1px solid black;
+}
+.billaddress{
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 95%;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.addressbill{
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 90px;
+    width: 95%;
+    resize: vertical;
+    font-size: 17px;
+    text-wrap: pretty;
+}
+.billgstn,.billstate{
+    margin-left: 5px;
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.billstate{
+    margin-top: 3px;
+}
+.discription{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+}
+.DescriptionofGoods{
+    width: 30%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hsn{
+    border: 1px solid black;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meters{
+    border: 1px solid black;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.folding{
+    border: 1px solid black;
+    width: 8%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.totalmeter{
+    border: 1px solid black;
+    width: 12%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.rate{
+    border: 1px solid black;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.amount{
+    border: 1px solid black;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    height: 240px;
+}
+.indescription{
+    padding-top: 7px;
+    /* display: flex; */
+    justify-content: center;
+    width: 30%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.indescriptiontext{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.totalbale{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.inhsn{
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.inmeters{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.infolding{
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    width: 8%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.intotalmeters{
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    width: 12%;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 450;
+}
+.inrate{
+    /* padding-top:7px; */
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.inamount{
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.inputmeters{
+    width: 90%;
+    height: 30px;
+    resize: none;
+    font-size: 14.5px;
+    border: none;
+    font-weight: 450;
+}
+.inputrate{
+    width: 90%;
+    height: 30px;
+    resize: none;
+    font-size: 15px;
+    border: none;
+    font-weight: 450;
+    text-align: center;
+}
+.taxdetails{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    height: 210px;
+}
+.bankdetails{
+    width: 58%;
+    border: 1px solid black;
+}
+.bankdetail{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.taxes{
+    width: 42%;
+    border: 1px solid black;
+    display: flex;
+}
+.name,.acno,.bankname,.ifsc,.branch{
+    width: 105px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.bbranch,.bifsc,.bbankname,.bacno,.bacno,.bname{
+    display: flex;
+    margin-top: 2px;
+}
+.aa{
+    font-size: 16px;
+    font-weight: 550;
+}
+.bname{
+    margin-top: 10px;
+}
+.taxname{
+    width: 53%;
+    border: 1px solid black;
+}
+.taxamt{
+    width: 48%;
+    border: 1px solid black;
+}
+.taxableamt,.igst,.cgst,.sgst{
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+    max-width: 98%;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    font-weight: 600;
+}
+.totamt{
+    margin-top:50px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    max-width: 98%;
+    height: 30px;
+    font-weight: 700;
+}
+.taxableamtno,.igstno,.cgstno,.sgstno{
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+    max-width: 98%;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+.amtinwordrs{
+    text-transform: capitalize;
+}
+.totalamt{
+    margin-top:50px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    max-width: 98%;
+    height: 30px;
+    font-weight: 700;
+}
+.amtinwordrs{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-weight:500;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    height: 116px;
+}
+.terms{
+    width: 60%;
+    border: 1px solid black;
+}
+.term{
+    margin-left: 3px;
+}
+.sign{
+    width: 40%;
+    border: 1px solid black;
+}
+ul{
+    margin-top: 5px;
+}
+li{
+    font-size: 15px;
+}
+.formurugan{
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.for{
+    font-size: 18px;
+}
+.authsign{
+    font-size:14px;
+    /* margin-top: 10px; */
+    text-align: center;
+}
+.imgs{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.signature{
+    width: 200px;
+    height: 50px;
+}
+.infolding,.intotalmeters,.inamount,.taxableamtno,.cgstno,.sgstno,.igstno,.totalamt,.amtwords{
+    display: flex;
+    justify-content: center;
+}
+.bale{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    margin-top:94px;
+}
+.baleinput{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.spanblae{
+    font-size: 18px;
+}
+.baleno1,.baleno2{
+    border: none;
+    width:3ch;
+    font-size: 18px;
+}
+.calc{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+.checkbox{
+    position: absolute;
+    margin-left:320px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.print{
+    margin-left: 90px;
+    border: none;
+    background-color: rgb(255, 0, 251);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+.clear{
+    position: absolute;
+    margin-left: 250px;
+}

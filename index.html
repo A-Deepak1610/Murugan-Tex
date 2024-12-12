@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murugan Tex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="icon" href="img/155314-kartikeya-free-photo_48x48.ico">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="img/murugan.jpg" class="murugan" alt="" >
+    <div class="mainbody">
+        <div class="taxinvoice"><p class="tax">TAX INVOICE</p> <p class="original">ORIGINAL FOR CONSIGNEE</p></div>
+       <div class="heading"><p>MURUGAN TEX</p></div>
+       <div class="address"><p>3/68 SENAN KADU, MURUGAMPALAYAM, UPPILIPALAYAM(PO)<br>
+        KARUVALUR(VIA), AVINASHI(TK), TIRUPPUR(DT)-641670</p></div>
+        <div class="details"><div class="gst"><p class="gstn">GSTN:33ABBFM6031B1ZZ</p><p class="state">STATE:TAMILNADU</p></div>
+        <div class="contact"><P class="phone">PHONE:9442156066</P><p class="email">E-mail:murugantex6576@gmai.com</p></div></div>
+        <div class="invoice"><div class="invoicenoo"><p class="no">INVOICE NO:<input type="text" class="inputno" value="01"></p>
+        <input type="checkbox" class="checkbox" id="checkbox" onclick="sameshipaddress()"></div>
+        <div class="invoicedate"><p class="date">INVOICE DATE:<input type="text" value="06/12/2024" class="inputdate"></p>
+        <!-- <button class="clear" onclick="clearData()">clear</button> -->
+        <button class="print" onclick="printpage()">Print</button></div></div>
+        <div class="billandship"><div class="billto"><p><pre> Billed To</pre></p>
+        <input type="text" class="billaddress" id="billaddress">
+        <textarea type="text" class="addressbill" id="addressbill"></textarea>
+        <input type="text" class="billgstn" id="billgstn" value="GSTN:"><br>
+        <input type="text" class="billstate" id="billstate" value="STATE:TN">
+        </div>
+        <div class="shipto"><p><pre> Shipped To</pre></p><input type="text" class="billaddress" id="sbilladdress">
+            <textarea type="text" class="addressbill" id="saddressbill"></textarea>
+            <input type="text" class="billgstn" id="sbillgstn"><br>
+            <input type="text" class="billstate" id="sbillstate"></div></div>
+        <div class="discription">
+            <div class="DescriptionofGoods">Description of Goods </div> 
+            <div class="hsn">HSN</div>
+            <div class="meters">METERS</div>
+            <div class="folding">FOLDING LESS-3%</div>
+            <div class="totalmeter">TOTAL METER</div>
+            <div class="rate">RATE</div>
+            <div class="amount">AMOUNT</div>
+        </div>
+        <div class="data">
+            <div class="indescription"><p class="indescriptiontext">CONTAINING 85% OR MORE BY WEIGHT OF COTTON</p>
+                <button id="calc" class="calc" onclick="calculate();hifen()">CALCULATE</button>
+            <div class="bale">
+                <div class="baleinput">
+                   <span class="spanblae"> BALE NO:</span>
+                    <input type="text"class='baleno1' id="baleno1"><span class="hifen">-</span><input type="text" class="baleno2" id="baleno2">
+                </div>
+                <p class="totalbale">TOTAL BALES:<span id="totalbales"></span></p></div></div>
+            <div class="inhsn">520811</div>
+            <div class="inmeters"><input type="text" class="inputmeters" id="inputmeters"></div>
+            <div class="infolding" id="infolding"></div>
+            <div class="intotalmeters" id="intotalmeters"></div>
+            <div class="inrate"><input type="text" class="inputrate" id="inputrate"></div>
+            <div class="inamount" id="inamount"></div>
+        </div>
+        <div class="taxdetails">
+            <div class="bankdetails">
+                <p class="bankdetail"><u>BANK DETAILS:</u></p>
+                <div class="bname"><p class="name">NAME</p><p ><pre class="aa">:  MURUGAN TEX</pre></p></div>
+               <div class="bacno"> <p class="acno">ACCOUNT NO</p> <p><pre class="aa">:  1612261010137</pre></p></div>
+               <div class="bbankname"> <p class="bankname">BANKNAME</p><p><pre class="aa">:  CANARA BANK</pre></p></div>
+                <div class="bifsc"><p class="ifsc">IFSC</p><p><pre class="aa">:  CNRB0001612</pre></p></div>
+                <div class="bbranch"><p class="branch">BRANCH</p><p><pre class="aa">:  THEKKALUR</pre></p></div>
+            </div>
+            <div class="taxes">
+                <div class="taxname">
+                    <div class="taxableamt">
+                    <p>TAXABLE AMOUNT</p>
+                </div>
+                <div class="cgst">
+                    <p> CGST @2.5%</p>
+                </div>
+                <div class="sgst">
+                    <p> SGST @2.5%</p>
+                </div>
+                <div class="igst">
+                    <p> IGST @5%</p>
+                </div>
+                <div class="totamt">
+                    <p>TOTAL AMOUNT</p>
+                </div>
+                </div>
+                <div class="taxamt">
+                    <div class="taxableamtno" id="taxableamtno"></div>
+                    <div class="cgstno" id="cgstno"></div>
+                    <div class="sgstno" id="sgstno"></div>
+                    <div class="igstno" id="igstno"></div>
+                    <div class="totalamt" id="totalamt"></div>
+                </div>
+            </div>
+        </div>
+        <div class="amtinwordrs">Amount (in words):<span id="amtwords"></span> <pre> only</pre></div>
+        <div class="bottom">
+            <div class="terms"><p class="term"><u>Terms & Conditions:</u></p>
+            <ul>
+                <li>We will not accept any claim after processing of goods</li>
+                <li>We are not responsible for any loss or damage in transit</li>
+                <li>Subject to Tirupur Jurisdiction</li>
+            </ul></div>
+            <div class="sign">
+                <p class="formurugan"><span class="for">For</span> MURUGAN TEX</p>
+                <div class="imgs">
+                <img src="img/sign.jpg" class="signature" alt=""></div>
+                <p class="authsign">Authorized Signatory</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

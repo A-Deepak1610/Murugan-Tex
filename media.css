@@ -1,0 +1,31 @@
+@media print{
+    @page{
+    margin: 5px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .billaddress{
+        border: none;
+    }
+    .billgstn,.billstate,.addressbill{
+        border: none;
+    } */
+    .addressbill{
+        resize: none;
+    }
+    .checkbox{
+        visibility: hidden;
+    }
+    .calc{
+        visibility: hidden;
+    }
+    .print{
+        visibility: hidden;
+    }
+    .clear{
+        visibility: hidden;
+    }
+}
