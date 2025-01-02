@@ -1,11 +1,24 @@
 this.window.addEventListener("keydown", (event) => {
   if (event.ctrlKey&&event.key == "Enter") {
-    calculate();
+    calculate()
     hifen()
+    date()
     
   }
-});
+})
+function date(){
+  var invoicedate=document.getElementById("invoicedate")
+  let date=new Date();
+  const day=date.getDate();
+  const month=date.getMonth();
+  Number(month);
+  var crtmonth=month+1
+  const year=date.getFullYear();
+  invoicedate.value=`${day}/${crtmonth}/${year}`
+}
 function calculate(){
+    date()
+    hifen()
     var inputmeters=document.getElementById("inputmeters").value
     var inputrate=document.getElementById("inputrate").value
     if(inputmeters==""){
@@ -29,7 +42,7 @@ function calculate(){
     var totalbales=document.getElementById("totalbales")
     var billstate=document.getElementById("billstate").value
     let foldingless=(inputmeters*3)/100
-    foldingless=foldingless.toFixed(2)
+    foldingless=foldingless.toFixed(2);
     infolding.textContent=foldingless
     let totalmeter=inputmeters-foldingless
     intotalmeters.textContent=totalmeter

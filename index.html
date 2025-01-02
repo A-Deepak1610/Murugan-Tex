@@ -20,11 +20,11 @@
        <div class="heading"><p>MURUGAN TEX</p></div>
        <div class="address"><p>3/68 SENAN KADU, MURUGAMPALAYAM, UPPILIPALAYAM(PO)<br>
         KARUVALUR(VIA), AVINASHI(TK), TIRUPPUR(DT)-641670</p></div>
-        <div class="details"><div class="gst"><p class="gstn">GSTN:33ABBFM6031B1ZZ</p><p class="state">STATE:TAMILNADU</p></div>
-        <div class="contact"><P class="phone">PHONE:9442156066</P><p class="email">E-mail:murugantex6576@gmai.com</p></div></div>
+        <div class="details"><div class="gst"><p class="gstn"><pre> GSTN:33ABBFM6031B1ZZ</pre></p><p class="state"><pre> STATE:TAMILNADU</pre></p></div>
+        <div class="contact"><P class="phone">PHONE:9442156066</P><p class="email"><pre>E-mail:murugantex6576@gmai.com</pre></p></div></div>
         <div class="invoice"><div class="invoicenoo"><p class="no">INVOICE NO:<input type="text" class="inputno" value="01"></p>
         <input type="checkbox" class="checkbox" id="checkbox" onclick="sameshipaddress()"></div>
-        <div class="invoicedate"><p class="date">INVOICE DATE:<input type="text" value="06/12/2024" class="inputdate"></p>
+        <div class="invoicedate"><p class="date">INVOICE DATE:<input type="text" id="invoicedate" class="inputdate"></p>
         <!-- <button class="clear" onclick="clearData()">clear</button> -->
         <button class="print" onclick="printpage()">Print</button></div></div>
         <div class="billandship"><div class="billto"><p><pre> Billed To</pre></p>
@@ -33,7 +33,8 @@
         <input type="text" class="billgstn" id="billgstn" value="GSTN:"><br>
         <input type="text" class="billstate" id="billstate" value="STATE:TN">
         </div>
-        <div class="shipto"><p><pre> Shipped To</pre></p><input type="text" class="billaddress" id="sbilladdress">
+        <div class="shipto"><p><pre> Shipped To</pre></p>
+            <input type="text" class="billaddress" id="sbilladdress">
             <textarea type="text" class="addressbill" id="saddressbill"></textarea>
             <input type="text" class="billgstn" id="sbillgstn"><br>
             <input type="text" class="billstate" id="sbillstate"></div></div>
@@ -98,7 +99,7 @@
                 </div>
             </div>
         </div>
-        <div class="amtinwordrs">Amount (in words):<span id="amtwords"></span> <pre> only</pre></div>
+        <div class="amtinwordrs">Amount (in words):<span id="amtwords"></span> <pre> only.</pre></div>
         <div class="bottom">
             <div class="terms"><p class="term"><u>Terms & Conditions:</u></p>
             <ul>
